@@ -1,0 +1,49 @@
+<div class="background-bar" ng-controller="Controller">
+        <app-button 
+        status="kanban" 
+        text="Kanban"
+        set-view="setView('kanban')">
+        </app-button>
+        
+        <app-button 
+        status="list" 
+        text="List"
+        set-view="setView('list')">
+        </app-button>
+</div>
+<main class="main-view">
+    <div class="main-view-bar">
+      <div class="main-view-pages">
+        <a href="#!/tasks?view='kanban'" class="selected-link app-link title-md">
+            Tarefas
+           </a>
+           <a href="#!/progression" class="app-link title-md text-gray-300">
+            Progressão
+           </a>
+      </div>
+    </div>
+    <div ng-if="true" class="board-background bg-light">
+        <task-status class="task-status" 
+        color="gray" 
+        status="Não iniciado">
+        </task-status>
+
+        <task-status class="task-status" 
+        color="blue" 
+        status="Em processo">
+        </task-status>
+
+        <task-status class="task-status" 
+        color="yellow" 
+        status="Pausado">
+        </task-status>
+
+        <task-status class="task-status" 
+        color="green" 
+        status="Finalizado">
+        </task-status>
+    </div>
+    <div ng-if="false" class="board-background bg-light">
+      
+  </div>
+</main>

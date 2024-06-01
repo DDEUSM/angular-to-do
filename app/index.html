@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+ <html lang="en" ng-app="todoApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS TodoApp</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+  <navbar></navbar>
+    <div ng-view></div>
+  <footer-template></footer-template>
+
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="app.module.js"></script>
+  <script src="app.routes.js"></script>
+  <script src="core/version/version.js"></script>
+  <script src="core/version/version-directive.js"></script>
+  <script src="core/version/interpolate-filter.js"></script>
+  <script src="templates/app-template.module.js"></script>
+  <script src="templates/navbar/navbar.component.js"></script>
+  <script src="templates/footer-template/footer-template.component.js"></script>
+  <script src="components/components.module.js"></script>
+  <script src="components/app-button/app-button.component.js"></script>
+  <script src="components/task-status/task-status.component.js"></script>
+  <script src="views/views.module.js"></script>
+  <script src="views/task-view/task-view.component.js"></script>
+
+</body>
+</html>
