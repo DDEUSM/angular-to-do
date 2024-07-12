@@ -1,0 +1,19 @@
+
+<h1 class="task-kanban-title text-white bg-{{color}}-transp">
+    {{status}}
+</h1>
+<ul class="task-kanban-list">
+    <li class="draggable-task" ng-repeat="task in tasks" 
+    class="status-list-item" 
+    ng-click="$root.go('/tasks/{{task.id}}')" draggable="true">
+        <h2 class="task-title text-gray-400">
+            {{task.title}}
+        </h2>
+        <span class="tag bg-red-transp text-white">
+           {{task.priorityLevel}}     
+        </span>
+    </li>   
+    <button class="btn-new-task">
+        Nova Task +
+    </button>
+</ul>

@@ -1,4 +1,4 @@
-.task-status {
+.task-kanban {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -6,7 +6,7 @@
     height: 100%;
 }
 
-.task-status-title {
+.task-kanban-title {
     box-sizing: border-box;
     margin: 0px;
     width: 60%;
@@ -16,7 +16,24 @@
     font-size: 16px;
 }
 
-.task-status-list {
+.btn-new-task {
+    border-radius: 8px;
+    color: var(--gray-300);   
+    height: 45px;
+    border: 2px solid var(--transparent);
+    font-weight: 600;
+    font-size: 14px;
+    transition: all ease-in 0.1s;
+    cursor: pointer;
+    flex: none;
+}
+
+.btn-new-task:hover {
+    border: 1px solid var(--gray-200);
+    background-color: var(--gray-200);
+}
+
+.task-kanban-list {
     display: flex;
     margin: 0px;
     flex-direction: column;
@@ -29,6 +46,8 @@
     border: 1px solid var(--gray-200);
     border-radius: 10px;
     list-style: none;
+    overflow-y: auto;
+    
 }
 
 .status-list-item {
@@ -63,4 +82,12 @@
     font-weight: 600;
     padding: 1px 15px;
     border-radius: 5px;
+}
+
+.draggable-task {
+    
+}
+
+.draggable-task .dragging {
+    opacity: 0.8;
 }

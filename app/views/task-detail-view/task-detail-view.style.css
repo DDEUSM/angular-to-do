@@ -1,0 +1,118 @@
+.task-detail-container {
+    position: relative;
+    margin: auto;
+    height: 100%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 0px;
+}
+
+.task-detail-properties {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    width: 20%;
+    padding: 20px;
+    background-color: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
+}
+
+.task-detail-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    width: 70%;
+    padding: 20px 30px;
+    background-color: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
+}
+
+.task-detail-description > h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.task-detail-description > p {
+    font-size: 14px;
+    margin: 10px 0px;
+    line-height: 18px;
+}
+
+.task-detail-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+}
+
+.task-detail-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.task-detail-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 1.5rem;
+    color: var(--gray-300);
+    background-color: var(--gray-200);
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    transition: all ease-in-out .1s;
+}
+
+.task-detail-btn:hover {
+    background-color: var(--white);
+    font-size: 1.6rem;
+    box-shadow: 1px 1px 8px var(--gray-200);
+}
+
+.left {
+    left: -75px;
+}
+
+.right {
+    right: -75px;
+}
+
+.trash-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: var(--red-transp);
+    font-size: 14px;
+    cursor: pointer;
+    transition: all ease-in-out .1s;
+}
+
+.trash-icon > svg {
+    height: 18px;
+    width: 18px;
+    stroke: var(--red-transp);
+    transition: all ease-in-out .1s;
+}
+
+.trash-btn:hover {
+    color: var(--red);
+}
+
+.trash-btn:hover svg {
+    stroke: var(--red);
+}

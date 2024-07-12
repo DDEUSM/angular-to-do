@@ -23,17 +23,6 @@ header {
     gap: 35px;
 }
 
-.navbar-menu-a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2px;
-    color: var(--gray-300);
-    text-decoration-line: none;
-    cursor: pointer;
-    transition: all ease-in-out .1s;
-}
-
 .navbar-menu-a:hover {
     color: var(--blue);
 }
@@ -55,4 +44,26 @@ header {
     border-radius: 100%;
     background-color: #dbdbdb;
     border: 1px solid var(--gray-300);
+}
+
+.navbar-menu-a svg {
+    stroke: var(--gray-300);
+    fill: #00000000;
+    width: 18px;
+    height: 18px;
+    transition: all ease-in-out .1s;
+}
+
+.navbar-menu-a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+    color: var(--gray-300);
+    text-decoration-line: none;
+    cursor: pointer;
+    transition: all ease-in-out .1s;
+}
+.navbar-menu-a:hover svg {
+    stroke: var(--blue);
 }

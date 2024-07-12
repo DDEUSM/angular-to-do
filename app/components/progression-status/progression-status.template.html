@@ -1,0 +1,11 @@
+<h1 class="progression-title title text-gray-300">Progressão das Tasks</h1>
+<div class="progression-container">
+    <div class="progression-item" ng-repeat="progress in progressions">
+        <div class="progression-status-title bg-{{progress.color}}-transp text-white">
+            {{ progress.title }}
+        </div>
+        <div class="progression-status-count bg-{{progress.color}}-transp text-white">
+            {{ progress.count }}
+        </div>
+    </div>
+</div>

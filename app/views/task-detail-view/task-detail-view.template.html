@@ -1,0 +1,58 @@
+<div class="background-bar">
+    <a class="app-btn" href="#!/tasks?view=kanban">Voltar</a>
+</div>
+<main class="main-view">
+<div class="main-view-bar">
+  <div class="main-view-pages">
+    <h1 class="title-md text-gray-300">
+        Tarefa #{{ taskId }}
+    </h1>
+  </div>
+  <div class="trash-btn">
+    Excluir
+    <div class="trash-icon" ng-include="'/assets/icons/svg/trash.svg'"></div>
+  </div>
+</div>
+<div class="board-background bg-light">
+    <div class="task-detail-container">
+      <button class="task-detail-btn left">&lt</button>
+      <button class="task-detail-btn right">&gt</button>
+      <div class="task-detail-properties text-gray-400">
+        
+        <div class="task-detail-field">
+          <p class="sub-title">Prioridade</p>
+          <span class="tag bg-red-transp text-white">
+            P2
+          </span>
+        </div>
+        <div class="task-detail-field">
+          <p class="sub-title">Status</p>
+          <span class="tag bg-gray-transp text-white">
+            Não-iniciado
+          </span>
+        </div>
+        <div class="task-detail-field">
+          <p class="sub-title">Data limite</p>
+          <div class="task-detail-date">
+            <span class="tag bg-blue-transp text-white">
+              10/12
+            </span>
+            <span class="tag bg-blue-transp text-white">
+              19/12
+            </span>  
+          </div>
+        </div>
+
+        </div>
+        <div class="task-detail-description text-gray-400">
+          <h1>
+            Projeto de Engenharia
+          </h1>
+          <hr>
+          <p>
+            A respeito do trabalho de engenharia da faculdade federal de Toledo dos Campos. Testando 1 coisa maluca que ninguem entende Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quia inventore qui sed expedita magnam exercitationem asperiores, quod, vero eligendi voluptatum et quis quas pariatur quasi. Nulla voluptatum ea obcaecati.
+          </p>
+        </div>
+    </div>
+</div>
+</main>

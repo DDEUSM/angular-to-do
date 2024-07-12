@@ -6,13 +6,16 @@
   <title>My AngularJS TodoApp</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
 
   <navbar></navbar>
-    <div ng-view></div>
-  <footer-template></footer-template>
+  <div ng-view></div>
+  
 
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular-route/angular-route.js"></script>
@@ -26,9 +29,13 @@
   <script src="templates/footer-template/footer-template.component.js"></script>
   <script src="components/components.module.js"></script>
   <script src="components/app-button/app-button.component.js"></script>
-  <script src="components/task-status/task-status.component.js"></script>
+  <script src="components/task-kanban/task-kanban.component.js"></script>
+  <script src="components/task-list/task-list.component.js"></script>
+  <script src="components/progression-status/progression-status.component.js"></script>
   <script src="views/views.module.js"></script>
   <script src="views/task-view/task-view.component.js"></script>
-
+  <script src="views/progression-view/progression-view.component.js"></script>
+  <script src="views/task-detail-view/task-detail-view.component.js"></script>
+  <script src="views/login-view/login-view.component.js"></script>
 </body>
 </html>

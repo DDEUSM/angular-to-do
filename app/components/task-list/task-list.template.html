@@ -1,6 +1,50 @@
-<tr>
-    <thead></thead>
-    <tbody>
-        <
-    </tbody>
-</tr>
+<table>
+    <tr>
+        <th>Título</th>
+        <th>Prioridade</th>
+        <th>Status</th>
+        <th>Data-limite</th>
+    </tr>
+    <tr ng-click="$root.go('/tasks/1')">
+        <td>Tarefa 1</td>
+        <td>
+            <span class="tag bg-red-transp text-white">
+                P3     
+            </span>
+        </td>
+        <td>
+            <span class="tag bg-gray-transp text-white">
+                Não-iniciado   
+            </span>
+        </td>
+        <td>16/04/2024</td>
+    </tr>
+    <tr>
+        <td>Tarefa 2</td>
+        <td>
+            <span class="tag bg-red-transp text-white">
+                P3     
+            </span>
+        </td>
+        <td>
+            <span class="tag bg-green-transp text-white">
+                finalizado
+            </span>
+        </td>
+        <td>26/04/2024</td>
+    </tr>
+    <tr>
+        <td>Tarefa 3</td>
+        <td>
+            <span class="tag bg-green-transp text-white">
+                P2     
+            </span>
+        </td>
+        <td>
+            <span class="tag bg-blue-transp text-white">
+                iniciado 
+            </span>
+        </td>
+        <td>16/04/2024</td>
+    </tr>
+</table>
